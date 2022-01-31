@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #011627;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    border: solid 1px #fff;
+}
+
+#grid {
+    height: 500px;
+}
+
+#grid:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.square {
+    border: solid 1px #fff;
+    width: calc(100%/8);
+    height: calc(100%/8);
+    float: left;
+}
+
+.clicked{
+    background-color: aquamarine;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+}
+
+header::after{
+    clear: both;
+}
+
+.header_left{
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.header_right{
+    width: 40%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+#difficolta{
+    width: 100px;
+}
+
+#bottone{
+    width: 80px;
+}
+
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+}
+
+footer h3{
+    text-align: center;
+    width: 50%;
+    padding-top: 10px;
+}
