@@ -45,7 +45,7 @@ function play() {
             const nodo = document.createElement('div');
             nodo.classList.add('square');
     
-            const dimensione = 'calc(100% / ${cellePerRiga})';
+            const dimensione = `calc(100% / ${cellePerRiga})`;
             nodo.style.width = dimensione;
             nodo.style.height = dimensione;
     
@@ -88,7 +88,7 @@ function play() {
 
     function generaBombe(numeroBombe, numeroCelle) {
         const bombeGenerate = [];
-        while (bombeGenerate.lenght < numeroBombe) {
+        while (bombeGenerate.length < numeroBombe) {
             const bomba = getRandomNumber(1, numeroCelle);
              if (!bombeGenerate.includes(bomba)) {
                 bombeGenerate.push(bomba);
