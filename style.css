@@ -4,39 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #011627;
-}
 
-.container {
-    width: 500px;
-    margin: 50px auto;
-    border: solid 1px #fff;
-}
 
-#grid {
-    height: 500px;
-}
 
-#grid:after{
-    display: block;
-    content: "";
-    clear: both;
-}
 
-.square {
-    border: solid 1px #fff;
-    width: calc(100%/8);
-    height: calc(100%/8);
-    float: left;
-}
-
-.clicked{
-    background-color: aquamarine;
-}
-
+/* header */
 header {
-    height: 80px;
+    height: 60px;
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -59,6 +33,54 @@ header::after{
 }
 
 
+
+
+
+/* main */
+
+main {
+    height: calc(100vh - 100px);;
+    padding-top: 50px;
+    background-color: 011627;
+}
+
+body {
+    background-color: #011627;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#grid {
+    height: 100%;
+}
+
+#grid:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.square {
+    border: solid 1px #fff;
+    width: calc(100%/8);
+    height: calc(100%/8);
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.clicked{
+    background-color: aquamarine;
+}
+
+.bomb{
+    background-color: red;
+}
+
 #difficolta{
     width: 100px;
 }
@@ -67,7 +89,10 @@ header::after{
     width: 80px;
 }
 
+
+/* footer */
 footer{
+    margin-top: 30px;
     height: 40px;
     width: 100%;
     background-color: #fff;
